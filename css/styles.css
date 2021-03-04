@@ -1,0 +1,240 @@
+/* fonts */
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Manrope-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+      url('../fonts/Manrope-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+      url('../fonts/Manrope-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+      url('../fonts/Manrope-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Light.woff2') format('woff2'),
+      url('../fonts/Manrope-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+      url('../fonts/Manrope-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+      url('../fonts/Manrope-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nanum Pen';
+  src: url('../fonts/NanumPen.woff2') format('woff2'),
+      url('../fonts/NanumPen.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Colors Variables */
+:root {
+  --text-primary: #18191F;
+  --white-primary: #FFFFFF;
+  --brand-turquoise-back: #D5FAFC;
+  --brand-turquoise: #2EC5CE;
+  --black-primary: #0B0D17;
+  --brand-purpple: #8C30F5;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 1200px;
+  background-color: var(--white-primary);
+  font-family: 'Manrope';
+  font-weight: 800;
+  font-style: normal;
+  color: var(--text-primary);
+}
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+button {
+  border-style: none;
+}
+button:focus {
+  outline: none;
+}
+
+/* -------HEADER-------- */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+.header--scrolled {
+  background-color: var(--brand-turquoise-back);
+  position: fixed;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+}
+.navbar {
+  display: none;
+}
+.navbar--mobile {
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.navbar__list {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar__item {
+  margin: 30px 0;
+ 
+}
+.navbar__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  margin: 20px 0;
+  border: var(--brand-purpple) 1px solid;
+  border-radius: 10px;
+  background-color: var(--brand-purpple);
+}
+.navbar__contact:hover {
+  background-color: var(--white-primary);
+}
+.navbar__contact-link {
+  height: 100%;
+  color: var(--white-primary);
+  padding-top: 8px;
+}
+.navbar__contact-link:hover {
+  color: var(--brand-purpple);  
+}
+.hamburger-btn, .x-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--white-primary);
+}
+.x-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--white-primary);
+}
+.hamburger-btn--clicked, .x-btn--clicked {
+  display: none;
+}
+.hamburger-btn--scrolled, .x-btn--scrolled {
+  background-color: var(--brand-turquoise-back);
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .header{
+    height: 88px;
+    padding: 30px 60px;
+  }
+  .logo {
+    width: 50%;
+  }
+  .navbar {
+    display: flex;
+    width: 50%;
+  }
+  .navbar__list {
+    width: 100%;
+    height: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .hamburger-btn, .x-btn {
+    display: none;
+  }
+  .navbar__item {
+    margin: 0 20px;
+  }
+  .navbar__contact {
+    margin: 20px 10px;
+    border: none;
+    background-color: var(--white-primary);
+    border-radius: 10px;
+  }
+  .navbar__contact:hover {
+    background-color: var(--brand-purpple);
+    color: var(--white-primary); 
+  }
+  .navbar__contact-link {
+    color: var(--text-primary);
+    margin: 0 10px;
+    padding-top: 9px;
+  }
+  .navbar__contact-link:hover {
+    color: var(--white-primary);  
+  }
+  /* DESKTOP */
+  @media screen and (min-width: 1024px) {
+    .header {
+      padding: 30px 120px;
+    }
+    .navbar__item {
+      margin: 0 10px;
+    }
+  }
+}
