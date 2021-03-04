@@ -167,13 +167,22 @@ button:focus {
 .navbar__contact-link:hover {
   color: var(--brand-purpple);  
 }
-.hamburger-btn {
+.hamburger-btn, .x-btn {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: var(--white-primary);
 }
-.hamburger-btn--scrolled {
+.x-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--white-primary);
+}
+.hamburger-btn--clicked, .x-btn--clicked {
+  display: none;
+}
+.hamburger-btn--scrolled, .x-btn--scrolled {
   background-color: var(--brand-turquoise-back);
 }
 /* TABLET */
@@ -195,7 +204,7 @@ button:focus {
     flex-direction: row;
     justify-content: flex-end;
   }
-  .hamburger-btn {
+  .hamburger-btn, .x-btn {
     display: none;
   }
   .navbar__item {
