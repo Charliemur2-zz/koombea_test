@@ -89,6 +89,7 @@
   box-sizing: border-box;
 }
 body {
+  width: 100%;
   background-color: var(--white-primary);
   font-family: 'Manrope';
   font-weight: 800;
@@ -130,7 +131,7 @@ button:focus {
   display: none;
 }
 .navbar--mobile {
-  width: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +194,7 @@ button:focus {
   grid-gap: 40px;
   background-color: var(--black-primary);
   color: var(--text-secundary);
-  padding: 30px 30px 20px 30px;
+  padding: 30px 0 20px 0;
 }
 .install {
   display: grid;
@@ -235,11 +236,12 @@ button:focus {
 .support {
   display: grid;
   grid-gap: 4px;
-  padding-left: 15px;
+  padding-left: 27px;
 }
 .legal {
   display: grid;
   grid-gap: 4px;
+  padding-left: 12px;
 }
 
 .support__item, .legal__item, .company__item {
@@ -264,7 +266,6 @@ button:focus {
   left: 0;
   top: 0;
   height: 1px;
-  width: 100vw;
   border-bottom: 1px solid var(--text-gray);
 }
 .social {
@@ -391,9 +392,6 @@ button:focus {
     padding-top: 15px;
   }
   .mini-foot::before {
-    width: 100vw;
-    position: relative;
-    left: -30px;
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
   }
@@ -465,7 +463,6 @@ button:focus {
   .copyright {
     padding-top: 27px;
   }
-
 }
 
 .sections {
