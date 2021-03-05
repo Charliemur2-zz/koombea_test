@@ -54,3 +54,14 @@ function disableScroll() {
 function enableScroll() {
   document.body.style.overflow = null;
 }
+
+/* get vurrent year */
+window.addEventListener('load', (
+  function () {
+      document.querySelector('.js-current-year').appendChild(
+          document.createTextNode(
+              new Date().getFullYear()
+          )
+      );
+  }
+));
