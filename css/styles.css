@@ -189,6 +189,7 @@ button:focus {
 }
 /* FOOTER */
 .footer {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
@@ -263,6 +264,7 @@ button:focus {
 }
 .mini-foot::before {
   content: '';
+  width: 100%;
   left: 0;
   top: 0;
   height: 1px;
