@@ -241,8 +241,8 @@ button:focus {
 }
 .features__title {
   font-weight: 800;
-  font-size: 3rem;
-  line-height: 64px;
+  font-size: 2rem;
+  line-height: 44px;
   text-align: center;
 }
 .features__paragraph {
@@ -250,7 +250,7 @@ button:focus {
   font-size: 1rem;
   line-height: 32px;
   text-align: center;
-  padding: 20px;
+  padding: 20px 35px;
 }
 .card {
   display: grid;
@@ -275,6 +275,36 @@ button:focus {
   font-size: 1rem;
   line-height: 26px;
   text-align: center;
+}
+/* STATS */
+.features--stats {
+  grid-template-columns: 1fr;
+}
+.cards-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card__paragraph--stats {
+  display: grid;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  text-align: start;
+  font-size: 1rem;
+  line-height: 26px;
+}
+.card--stats {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+}
+.card__icon--stats {
+  grid-row: 1 / span 2;
+}
+.card__title--stats {
+  grid-column: 2 / span 1;
+  text-align: start;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 30px;
 }
 /* FOOTER */
 .footer {
@@ -459,6 +489,29 @@ button:focus {
   .card__paragraph {
     display: grid;
   }
+  /* STATS */
+  .features--stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .features__text--stats {
+    grid-column: 1 / span 1;
+    padding-top: 77px;
+    padding-bottom: 100px;
+  }
+  .cards-group {
+    grid-column: 2 / span 1;
+    grid-template-columns: 1fr;
+  }
+  .features__title--stats {
+    font-size: 2rem;
+    line-height: 44px;
+  }
+  .features__paragraph--stats {
+    width: 100%;
+  }
+  .card--stats {
+    grid-gap: 3px;
+  }
   /* FOOTER */
   .footer {
     grid-template-columns: 1fr 1fr 1fr;
@@ -568,7 +621,32 @@ button:focus {
   .card {
     padding: 10px;
   }
-
+  /* STATS */
+  .features--stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .features__text--stats {
+    grid-column: 1 / span 1;
+  }
+  .features__title--stats {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 64px;
+    text-align: start;
+  }
+  .features__paragraph--stats {
+    text-align: start;
+    padding-left: 0;
+  }
+  .cards-group {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 98px;
+    padding-bottom: 136px;
+  }
+  .card__title--stats {
+    font-size: 1.75rem;
+    line-height: 40px;
+  }
   /* FOOTER */
   .footer {
     height: 393px;
