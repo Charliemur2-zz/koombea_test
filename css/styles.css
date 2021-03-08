@@ -795,16 +795,15 @@ button:focus {
     font-weight: 800;
     font-size: 4.5rem;
     line-height: 98px;
-    padding: 0;
+    padding: 0 15% 0 0;
   }
   .hero__discover {
-    padding: 0;
-    margin-top: -20px;
+    padding: 22px 0 0 0;
+    align-self: start;
   }
   .hero__paragraph {
     font-size: 1.25rem;
     padding: 0;
-    margin: 40px 0 0 0;
   }
   /* CLOUDS */
   .clouds__text {
@@ -834,7 +833,6 @@ button:focus {
   }
   /* FEATURES-ONE */
   .features {
-    margin-top: 40px;
     padding: 30px 165px;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -893,6 +891,8 @@ button:focus {
   /* STATS */
   .features--stats {
     grid-template-columns: 1fr 1fr;
+    padding: 3% 10%;
+    margin-bottom: 0;
   }
   .features__text--stats {
     grid-column: 1 / span 1;
@@ -918,7 +918,7 @@ button:focus {
   }
   /* FEATURE TWO */
   .feature-two {
-    padding: 0 10% 5% 5%;
+    padding: 0 10% 5% 10%;
   }
   .feature-two__text {
     grid-template-columns: 1fr 1fr;
