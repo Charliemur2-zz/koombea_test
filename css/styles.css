@@ -590,7 +590,7 @@ button:focus {
   color: var(--text-gray);
   text-align: center;
 }
-/* -------------------------------------------- */
+/* ------------------------------------------------ */
 /* TABLET */
 /* HEADER */
 @media screen and (min-width: 768px) {
@@ -834,7 +834,7 @@ button:focus {
     grid-row: 1 / span 1;
   }
 } 
-/* --------------------------------- */
+/* ------------------------------------------- */
 /* DESKTOP */
 @media screen and (min-width: 1224px) {
   /* HEADER */
@@ -1130,3 +1130,4 @@ button:focus {
     padding-left: 20%;
   }
 }
+/* -----------------END------------------ */
