@@ -24,6 +24,23 @@ Clone the repositoy on your local computer.
 
 ---
 
+## Features
+Navbar and Hero section
+<img src="./images/readme-imgs/hero.png">
+Clouds section
+<img src="./images/readme-imgs/clouds.png">
+Features sections
+<img src="./images/readme-imgs/features.png">
+<img src="./images/readme-imgs/features2.png">
+Testimonial section
+<img src="./images/readme-imgs/testimonial.png">
+CTA section
+<img src="./images/readme-imgs/cta.png">
+Footer and mini-footer section
+<img src="./images/readme-imgs/footer.png">
+
+---
+
 ## Usage 
 
 After clone the repository you can see the home page in the browser with index.html file. Make changes and test things on it.
