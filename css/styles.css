@@ -261,10 +261,9 @@ button:focus {
 }
 .clouds__container {
   width: 100%;
-  height: 230px;
   display: grid;
   background: url('../images/logo_clouds/circle.svg') no-repeat;
-  background-size: 120%;
+  background-size: 100%;
   background-position: top;
   padding: 20px 0;
 }
@@ -275,6 +274,7 @@ button:focus {
 .clouds__container-bottom {
   display: flex;
   justify-content: space-around;
+  padding: 0 10%
 }
 .clouds__img {
   width: 80px;
@@ -533,7 +533,7 @@ button:focus {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: start;
 }
 .company {
@@ -582,10 +582,14 @@ button:focus {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 5px;
   margin-top: 8px;
+  padding-left: 40px;
 }
 .social__item {
+  width: 40%;
   display: grid;
   justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(150, 155, 171, 0.1);
 }
 .copyright {
   grid-column: 1 /span 2;
@@ -839,7 +843,7 @@ button:focus {
 } 
 /* ------------------------------------------- */
 /* DESKTOP */
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   /* HEADER */
   .header {
     padding: 10px 142px 0px 166px;
@@ -850,8 +854,8 @@ button:focus {
   }
   /* HERO */
   .hero__text {
-    grid-template-rows: 3fr 0.5fr 1fr;
-    padding: 0 5% 30% 23%;
+    grid-template-rows: 50% 10% 40%;
+    padding: 0 0 0 23%;
   }
   .hero__title {
     font-weight: 800;
@@ -860,7 +864,7 @@ button:focus {
     padding: 0 15% 0 0;
   }
   .hero__discover {
-    padding: 34px 0 0 0;
+    padding: 56px 0 0 0;
     align-self: start;
   }
   .hero__paragraph {
@@ -883,23 +887,24 @@ button:focus {
     line-height: 32px;
   }
   .clouds__container {
-    background-size: 68%;
+    grid-template-rows: 100px 100px;
+    background-size: 550px;
     padding-left: 5%;
-    height: 280px;
     padding-top: 30px;
     padding-bottom: 61px;
   }
-  .clouds__container-top, .clouds__container-bottom {
-    width: 61%;
-    height: 100%;
+  .clouds__container-top {
+    width: 450px;
   }
   .clouds__img {
     width: 104px;
     height: 104px;
   }
   .clouds__container-bottom {
+    width: 400px;
+    justify-content: center;
     margin-top: 10px;
-    padding: 10px 40px;
+    padding-left: 125px;
   }
   /* FEATURES-ONE */
   .features {
@@ -1138,7 +1143,10 @@ button:focus {
   }
   .social {
     margin-top: 16px;
-    padding: 0 35% 0 19%;
+    padding: 0 34% 0 19%;
+  }
+  .social__item {
+    width: 80%;
   }
   .copyright {
     text-align: start;
