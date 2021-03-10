@@ -145,9 +145,12 @@ button:focus {
   align-items: center;
 }
 .navbar__item {
-  margin: 30px 0;
- 
+  margin: 30px 0; 
 }
+.navbar__item--active {
+  border-bottom: var(--brand-purpple) 3px solid;
+}
+
 .navbar__contact {
   display: flex;
   justify-content: center;
@@ -480,7 +483,7 @@ button:focus {
 .cta__paragraph--all-line {
   grid-column: 1 / span 2;
 }
-.install--cta {
+.install-cta {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -763,7 +766,7 @@ button:focus {
   .cta__title {
     text-align: start;
   }
-  .install__item--start {
+  .install-cta__item--start {
     justify-content: start;
   }
   .cta__pictures {
@@ -869,7 +872,7 @@ button:focus {
     grid-template-columns: 44% 56%;
   }
   .clouds__text {
-    padding: 9% 6% 15% 26%;
+    padding: 10% 6% 15% 26%;
   }
   .clouds__title {
     font-size: 3rem;
@@ -883,7 +886,7 @@ button:focus {
     background-size: 68%;
     padding-left: 5%;
     height: 280px;
-    padding-top: 24px;
+    padding-top: 30px;
     padding-bottom: 61px;
   }
   .clouds__container-top, .clouds__container-bottom {
@@ -900,10 +903,10 @@ button:focus {
   }
   /* FEATURES-ONE */
   .features {
-    padding: 30px 165px;
+    padding: 30px 158px;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 24px;
-    grid-gap: 25px
+    grid-gap: 26px
   }
   .features__text {
     grid-column: 1 / span 3;
@@ -936,10 +939,10 @@ button:focus {
   .testimonials__title {
     align-self: end;
     margin-bottom: 0;
-    padding-left: 30px;
+    padding-left: 38px;
   }
   .testimonials__paragraph {
-    padding: 0 113px 0 161px;
+    padding: 7px 113px 0 165px;
     text-align: start;
   }
   .testimonials__container {
@@ -947,18 +950,20 @@ button:focus {
   }
   .carusel {
     grid-template-columns: 2fr 1fr;
-    padding: 40px;
+    padding: 27px 40px 40px 40px;
     grid-gap: 19px;
   }
   .carusel__text {
     font-size: 1.125rem;
     padding: 0;
+    margin-bottom: 28px;
   }
   .quotes {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     display: grid;
     justify-content: end;
+    padding-right: 0;
   }
   .quotes-img {
     width: 80px;
@@ -968,18 +973,26 @@ button:focus {
     grid-column: 1 / span 2;
     grid-row: 2 / span 1;
   }
+  .slider-btns {
+    padding-left: 35px;
+  }
   .slider-btns__left {
     padding-left: 52px;
+    font-size: 1.2rem;
+  }
+  .slider-btns__right {
+    font-size: 1.2rem;
+    padding-left: 40px;
   }
   /* STATS */
   .features--stats {
     grid-template-columns: 1fr 1fr;
     padding: 0 10%;
-    margin-bottom: 8%;
+    margin-bottom: 7.5%;
   }
   .features__text--stats {
     grid-column: 1 / span 1;
-    padding-top: 13%;
+    padding-top: 12%;
     padding-left: 4%;
     padding-bottom: 0;;
   }
@@ -995,7 +1008,7 @@ button:focus {
   }
   .cards-group {
     grid-template-columns: 1fr 1fr;
-    padding-top: 12%;
+    padding-top: 10%;
     padding-bottom: 0;
   }
   .card--stats {
@@ -1013,11 +1026,12 @@ button:focus {
   }
   /* FEATURE TWO */
   .feature-two {
-    padding: 19px 12% 2.5% 164px;
+    padding: 22px 12% 2.5% 164px;
+    margin-bottom: 24px;
   }
   .feature-two__text {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
   .feature-two__title {
     font-size: 2.5rem;
@@ -1029,7 +1043,7 @@ button:focus {
   .feature-two__paragraph {
     text-align: left;
     margin-bottom: 0;
-    padding: 5px 3px 0 15px;
+    padding: 8px 0 0 18px;
   }
   .feature-two__picture {
     grid-column: 1 / span 2;
@@ -1053,17 +1067,17 @@ button:focus {
   .cta__paragraph--all-line {
     margin-bottom: 0;
   }
-  .install--cta {
+  .install-cta {
     grid-template-columns: 1fr 2.5fr;
   }
-  .install__item--start {
+  .install-cta__item--start {
     padding-top: 5px;
   }
   /* FOOTER */
   .footer {
     height: 393px;
     grid-template-columns: 1fr 1fr 1fr 1.5fr;
-    padding-top: 60px;
+    padding-top: 54px;
     padding-bottom: 0;
     grid-gap: 0;
     
@@ -1077,7 +1091,7 @@ button:focus {
   .support {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    padding-left: 30%;
+    padding-left: 33%;
     grid-gap: 0;
     padding-bottom: 22px;
   }
@@ -1085,13 +1099,15 @@ button:focus {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
     padding-right: 8%;
+    padding-left: 20px;
     grid-gap: 0;
   }
   .install {
     grid-column: 4 / span 1;
     grid-template-columns: 1fr;
-    padding-left: 11%;
+    padding-left: 13%;
     grid-gap: 0;
+    margin-bottom: 37px;
   }
   .install__title {
     padding-bottom: 0;
@@ -1121,12 +1137,12 @@ button:focus {
     padding-top: 18px;
   }
   .social {
-    margin-top: 20px;
-    padding: 0 37% 0 16%;
+    margin-top: 16px;
+    padding: 0 35% 0 19%;
   }
   .copyright {
     text-align: start;
-    padding-top: 31px;
+    padding-top: 24px;
     padding-left: 20%;
   }
 }
