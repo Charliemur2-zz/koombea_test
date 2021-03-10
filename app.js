@@ -4,6 +4,15 @@ const header = document.querySelector('.js-header');
 const menuBtn = document.querySelector('.js-hamburguer-btn');
 const closeBtn = document.querySelector('.js-x-btn');
 
+/* active item on navbar */
+let navItem = document.querySelectorAll('.js-navbar-item');
+navItem.forEach(item => {
+  item.addEventListener('click', function() {
+    navItem.forEach(navItem => navItem.classList.remove('navbar__item--active'));
+    this.classList.add('navbar__item--active');
+  });
+});
+
 /* scrolled menu */
 window.onscroll = function() {
   if(window.pageYOffset > 80) {
@@ -12,10 +21,10 @@ window.onscroll = function() {
     closeBtn.classList.add('x-btn--scrolled');
 
     if(!scrolled) {
-      navbar.style.transform = 'translateY(-70px)';
+      header.style.transform = 'translateY(-70px)';
     }
     setTimeout(function() {
-      navbar.style.transform = 'translate(0)';
+      header.style.transform = 'translate(0)';
       scrolled = true;
     }, 500)
   } else {

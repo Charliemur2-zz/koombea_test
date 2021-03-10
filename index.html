@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landify | Landing Page</title>
-  <link rel="stylesheet" href="./css/styles.css?v=8.1.4">
+  <link rel="stylesheet" href="./css/styles.css?v=8.1.7">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
@@ -22,7 +22,7 @@
         <rect y="60" width="100" height="20" rx="8"></rect>
       </svg>
     </button>
-    <button class="x-btn--clicked js-x-btn" role="button"  aria-label="close menu"   onclick="showMenu()">
+    <button class="x-btn x-btn--clicked js-x-btn" role="button"  aria-label="close menu"   onclick="showMenu()">
       <svg fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
         <g stroke="#18191F" stroke-linecap="round" stroke-width="3">
           <path d="M1.515 2.015l16.97 16.97M2 18.97L18.97 2"/>
@@ -30,20 +30,20 @@
       </svg>
     </button>
     <nav class="navbar js-navbar" role="navigation">
-      <ul class="navbar__list">
-        <li class="navbar__item active" role="menuitem">
+      <ul class="navbar__list js-navbar-list">
+        <li class="navbar__item js-navbar-item" role="menuitem">
           <a href="#" class="navbar__item-link" role="link">About</a>
         </li>
-        <li class="navbar__item" role="menuitem">
+        <li class="navbar__item js-navbar-item" role="menuitem">
           <a href="#" class="navbar__item-link" role="link">Services</a>
         </li>
-        <li class="navbar__item" role="menuitem">
+        <li class="navbar__item js-navbar-item" role="menuitem">
           <a href="#" class="navbar__item-link" role="link">Blog</a>
         </li>
-        <li class="navbar__item" role="menuitem">
+        <li class="navbar__item js-navbar-item" role="menuitem">
           <a href="#" class="navbar__item-link" role="link">Jobs</a>
         </li>
-        <li class="navbar__contact" role="menuitem">
+        <li class="navbar__contact js-navbar-item" role="menuitem">
           <a href="#" class="navbar__contact-link" role="link">Contact</a>
         </li>
       </ul>
@@ -140,7 +140,7 @@
     <div class="testimonials__container">
       <article class="carusel" role="slider">
         <div class="client">
-          <img class="client-img" role="img" src="./images/testimonial/client1.png" alt="client info">
+          <img class="client__img" role="img" src="./images/testimonial/client1.png" alt="client info">
         </div>
         <div class="quotes">
           <img class="quotes-img" role="img" src="./images/testimonial/quotes.svg" alt="quotes img">
@@ -148,8 +148,8 @@
         <p class="carusel__text" role="text">
           We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.
         </p>
-        <div class="client__logo">
-          <img class="client__logo-img" role="img" src="./images/testimonial/go-pro.png" alt="client logo">
+        <div class="client-logo">
+          <img class="client-logo__img" role="img" src="./images/testimonial/go-pro.png" alt="client logo">
         </div>
         <div class="slider-btns">
           <button class="slider-btns__left">&#10094</button>
@@ -211,13 +211,13 @@
       <p class="cta__paragraph" role="text">
         Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!
       </p>
-      <div class="install--cta">
+      <div class="install-cta">
         <p class="cta__paragraph cta__paragraph--all-line">Get the App</p>
-        <a href="#" class="install__item install__item--start" role="link">
-          <img class="install__badge" src="./images/download-badge/app-store-badge.svg" alt="app-store img" role="img">
+        <a href="#" class="install-cta__item install-cta__item--start" role="link">
+          <img class="install-cta__badge" src="./images/download-badge/app-store-badge.svg" alt="app-store img" role="img">
         </a>  
-        <a href="#" class="install__item install__item--start" role="link">
-          <img class="install__badge" src="./images/download-badge/google-play-badge.svg" alt="google-store img" role="img">
+        <a href="#" class="install-cta__item install-cta__item--start" role="link">
+          <img class="install-cta__badge" src="./images/download-badge/google-play-badge.svg" alt="google-store img" role="img">
         </a>  
       </div>
     </div>
