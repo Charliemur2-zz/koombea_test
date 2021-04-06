@@ -121,8 +121,8 @@ button:focus {
   width: 20%;
   background: transparent;
   position: fixed;
-  left: 26%;
-  top: 5.2%;
+  left: 48%;
+  top: 1%;
 }
 .edit-bar--show {
   display: flex;
@@ -680,6 +680,10 @@ button:focus {
   }
   .navbar__contact-link:hover {
     color: var(--white-primary);  
+  }
+  .edit-bar {
+    left: 23%;
+    top: 1.5%;
   }
   /* HERO */
   .hero-container {
