@@ -74,3 +74,33 @@ window.addEventListener('load', (
       );
   }
 ));
+
+/* USER TEXT EDIT */
+const editableDivs = document.querySelectorAll('.js-editable');
+const saveEditBtn = document.querySelector('.js-saveBtn');
+const editBar = document.querySelector('.js-edit-bar');
+
+hotkeys('ctrl+k, command+k', function() {
+  editBar.classList.add('edit-bar--show');
+  Array.from(editableDivs).forEach(editableDiv => {
+    editableDiv.contentEditable = "true";
+  })
+  return false;
+});
+let userVersionArray = [];
+saveEditBtn.addEventListener('click', function() {
+  Array.from(editableDivs).forEach(editableDiv => {
+    let userVersion = editableDiv.innerHTML;
+    userVersionArray.push(userVersion);
+  });
+  localStorage.userEdit = JSON.stringify(userVersionArray);
+  editBar.classList.remove('edit-bar--show');
+});
+window.onload = (event) => {
+  if( localStorage.userEdit != null) {
+    userEditParse = JSON.parse(localStorage.userEdit);
+    for (let i = 0; i < localStorage.userEdit.length; i++) {
+      editableDivs[i].innerHTML = userEditParse[i];
+    }
+  }
+}
