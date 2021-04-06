@@ -32,30 +32,34 @@
     <nav class="navbar js-navbar" role="navigation">
       <ul class="navbar__list js-navbar-list">
         <li class="navbar__item js-navbar-item" role="menuitem">
-          <a href="#" class="navbar__item-link" role="link">About</a>
+          <a href="#" class="navbar__item-link js-editable" contenteditable="true" role="link">About</a>
         </li>
         <li class="navbar__item js-navbar-item" role="menuitem">
-          <a href="#" class="navbar__item-link" role="link">Services</a>
+          <a href="#" class="navbar__item-link js-editable" contenteditable="true" role="link">Services</a>
         </li>
         <li class="navbar__item js-navbar-item" role="menuitem">
-          <a href="#" class="navbar__item-link" role="link">Blog</a>
+          <a href="#" class="navbar__item-link js-editable" contenteditable="true" role="link">Blog</a>
         </li>
         <li class="navbar__item js-navbar-item" role="menuitem">
-          <a href="#" class="navbar__item-link" role="link">Jobs</a>
+          <a href="#" class="navbar__item-link js-editable" contenteditable="true" role="link">Jobs</a>
         </li>
         <li class="navbar__contact js-navbar-item" role="menuitem">
-          <a href="#" class="navbar__contact-link" role="link">Contact</a>
+          <a href="#" class="navbar__contact-link js-editable" contenteditable="true" role="link">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
+  <div class="edit-bar">
+    <h4 class="edit-bar__title">Options</h4>
+    <input class="edit-bar__save js-saveBtn" type="button" value="save my edits"/>
+  </div>
   <section class="hero">
     <div class="hero__img">
       <img class="hero__img-picture" src="./images/hero/hero-img.png" alt="house img">
     </div>  
     <div class="hero__text">
-      <h1 class="hero__title" role="text">Workspace that inspire</h1>
-      <p class="hero__paragraph" role="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
+      <h1 class="hero__title js-editable" contenteditable="true" role="text">Workspace that inspire</h1>
+      <p class="hero__paragraph js-editable" contenteditable="true" role="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
       <div class="hero__discover">
         <a href="#" class="hero__discover-link" role="link">
           <img class="hero__discover-img" src="./images/hero/cta.svg" alt="img to cta">
@@ -65,8 +69,8 @@
   </section>
   <section class="clouds">
     <div class="clouds__text" role="text">
-      <h1 class="clouds__title" role="text">Easy integrations with 170+ tools</h1>
-      <p class="clouds__paragraph" role="text">Connect Landify with your favourite tools that you use daily and keep things on track.</p>
+      <h1 class="clouds__title js-editable" contenteditable="true" role="text">Easy integrations with 170+ tools</h1>
+      <p class="clouds__paragraph js-editable" contenteditable="true" role="text">Connect Landify with your favourite tools that you use daily and keep things on track.</p>
     </div>
     <div class="clouds__container" aria-label="tools integration">
       <div class="clouds__container-top">
@@ -84,8 +88,8 @@
   </section>
   <section class="features" aria-label="features section">
     <div class="features__text">
-      <h1 class="features__title" role="text">Tailor-made features</h1>
-      <p class="features__paragraph" role="text">
+      <h1 class="features__title js-editable" contenteditable="true" role="text">Tailor-made features</h1>
+      <p class="features__paragraph js-editable" role="text" contenteditable="true">
         Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.
       </p>
     </div>
@@ -93,49 +97,49 @@
       <div class="card__icon">
         <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-one.svg" alt="card icon">
       </div>
-      <h1 class="card__title" role="text">Robust workflow</h1>
-      <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+      <h1 class="card__title js-editable" contenteditable="true" role="text">Robust workflow</h1>
+      <p class="card__paragraph js-editable" contenteditable="true" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
     </div>
     <div class="card" aria-label="features card">
       <div class="card__icon">
         <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-two.svg" alt="card icon">
       </div>
-      <h1 class="card__title" role="text">Flexibility</h1>
-      <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+      <h1 class="card__title js-editable" contenteditable="true" role="text">Flexibility</h1>
+      <p class="card__paragraph js-editable" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
     </div>
     <div class="card" aria-label="features card">
       <div class="card__icon">
         <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-three.svg" alt="card icon">
       </div>
-      <h1 class="card__title" role="text">User friendly</h1>
-      <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+      <h1 class="card__title js-editable" contenteditable="true" role="text">User friendly</h1>
+      <p class="card__paragraph js-editable" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
     </div>
     <div class="card" aria-label="features card">
       <div class="card__icon">
         <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-four.svg" alt="card icon">
       </div>
-      <h1 class="card__title" role="text">Multiple layouts</h1>
-      <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+      <h1 class="card__title js-editable" contenteditable="true" role="text">Multiple layouts</h1>
+      <p class="card__paragraph js-editable" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
     </div>
     <div class="card" aria-label="features card">
       <div class="card__icon">
         <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-five.svg" alt="card icon">
       </div>
-      <h1 class="card__title" role="text">Better components</h1>
-      <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+      <h1 class="card__title js-editable" contenteditable="true" role="text">Better components</h1>
+      <p class="card__paragraph js-editable" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
     </div>
     <div class="card" aria-label="features card">
       <div class="card__icon">
         <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-seven.svg" alt="card icon">
       </div>
-      <h1 class="card__title" role="text">Well organised</h1>
-      <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+      <h1 class="card__title js-editable" contenteditable="true" role="text">Well organised</h1>
+      <p class="card__paragraph js-editable" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
     </div>
   </section>
   <section class="testimonials" aria-label="testimonials">
     <div class="testimonials__banner" role="banner">
-      <h1 class="testimonials__title" role="text">Happy customers</h1>
-      <p class="testimonials__paragraph" role="text">Feedback from these happy customers helps us in reaching the heights</p>
+      <h1 class="testimonials__title js-editable" contenteditable="true" role="text">Happy customers</h1>
+      <p class="testimonials__paragraph js-editable" contenteditable="true" role="text">Feedback from these happy customers helps us in reaching the heights</p>
     </div>
     <div class="testimonials__container">
       <article class="carusel" role="slider">
@@ -145,7 +149,7 @@
         <div class="quotes">
           <img class="quotes-img" role="img" src="./images/testimonial/quotes.svg" alt="quotes img">
         </div>
-        <p class="carusel__text" role="text">
+        <p class="carusel__text js-editable" contenteditable="true" role="text">
           We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.
         </p>
         <div class="client-logo">
@@ -160,44 +164,44 @@
   </section>
   <section class="features features--stats" aria-label="features section">
     <div class="features__text features__text--stats">
-      <h1 class="features__title features__title--stats" role="text">Our 18 years of achievements</h1>
-      <p class="features__paragraph features__paragraph--stats" role="text">With our super powers we have reached this</p>
+      <h1 class="features__title features__title--stats js-editable" contenteditable="true" role="text">Our 18 years of achievements</h1>
+      <p class="features__paragraph features__paragraph--stats js-editable" contenteditable="true" role="text">With our super powers we have reached this</p>
     </div>
     <div class="cards-group">
       <div class="card card--stats" aria-label="stats card">
         <div class="card__icon card__icon--stats">
           <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-one.svg" alt="card icon">
         </div>
-        <h1 class="card__title card__title--stats" role="text">10,000+</h1>
-        <p class="card__paragraph card__paragraph--stats">Downloads per day</p>
+        <h1 class="card__title card__title--stats js-editable" contenteditable="true" role="text">10,000+</h1>
+        <p class="card__paragraph card__paragraph--stats js-editable" contenteditable="true">Downloads per day</p>
       </div>
       <div class="card card--stats" aria-label="stats card">
         <div class="card__icon card__icon--stats">
           <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-four.svg" alt="card icon">
         </div>
-        <h1 class="card__title card__title--stats" role="text">2 Million</h1>
-        <p class="card__paragraph card__paragraph--stats">Users</p>
+        <h1 class="card__title card__title--stats js-editable" contenteditable="true" role="text">2 Million</h1>
+        <p class="card__paragraph card__paragraph--stats js-editable" contenteditable="true">Users</p>
       </div>
       <div class="card card--stats" aria-label="stats card">
         <div class="card__icon card__icon--stats">
           <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-five.svg" alt="card icon">
         </div>
-        <h1 class="card__title card__title--stats" role="text">500+</h1>
-        <p class="card__paragraph card__paragraph--stats">Clients</p>
+        <h1 class="card__title card__title--stats js-editable" contenteditable="true" role="text">500+</h1>
+        <p class="card__paragraph card__paragraph--stats js-editable" contenteditable="true">Clients</p>
       </div>
       <div class="card card--stats" aria-label="stats card">
         <div class="card__icon card__icon--stats">
           <img class="card__icon-img" role="img" src="./images/feature_icons/features-icon-seven.svg" alt="card icon">
         </div>
-        <h1 class="card__title card__title--stats" role="text">140</h1>
-        <p class="card__paragraph card__paragraph--stats">Countries</p>
+        <h1 class="card__title card__title--stats js-editable" contenteditable="true" role="text">140</h1>
+        <p class="card__paragraph card__paragraph--stats js-editable" contenteditable="true">Countries</p>
       </div>
     </div>
   </section>
   <section class="feature-two">
     <div class="feature-two__text">
-      <h1 class="feature-two__title" role="text">Enter the world of all fashion trends</h1>
-      <p class="feature-two__paragraph" role="text">
+      <h1 class="feature-two__title js-editable" contenteditable="true" role="text">Enter the world of all fashion trends</h1>
+      <p class="feature-two__paragraph js-editable" contenteditable="true" role="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, scelerisque non tincidunt sit lectus senectus.
       </p>
     </div>
@@ -207,14 +211,14 @@
   </section>
   <section class="cta" role="banner">
     <div class="cta__text" role="text">
-      <h1 class="cta__title" role="text">Manage your projects from your mobile</h1>
-      <p class="cta__paragraph" role="text">
+      <h1 class="cta__title js-editable" contenteditable="true" role="text">Manage your projects from your mobile</h1>
+      <p class="cta__paragraph js-editable" contenteditable="true" role="text">
         Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!
       </p>
       <div class="install-cta">
-        <p class="cta__paragraph cta__paragraph--all-line">Get the App</p>
+        <p class="cta__paragraph cta__paragraph--all-line js-editable" contenteditable="true">Get the App</p>
         <a href="#" class="install-cta__item install-cta__item--start" role="link">
-          <img class="install-cta__badge" src="./images/download-badge/app-store-badge.svg" alt="app-store img" role="img">
+          <img class="install-cta__badge js-editable" contenteditable="true" src="./images/download-badge/app-store-badge.svg" alt="app-store img" role="img">
         </a>  
         <a href="#" class="install-cta__item install-cta__item--start" role="link">
           <img class="install-cta__badge" src="./images/download-badge/google-play-badge.svg" alt="google-store img" role="img">
@@ -225,7 +229,7 @@
   </section>
   <footer class="footer">
     <div class="install">
-      <h3 class="install__title">Install App</h3>
+      <h3 class="install__title js-editable" contenteditable="true">Install App</h3>
       <a href="#" class="install__item" role="link">
         <img class="install__badge install__badge--medium" src="./images/download-badge/app-store-badge.svg" alt="app-store img" role="img">
       </a>  
@@ -234,29 +238,29 @@
       </a>  
     </div>
     <div class="company">
-      <h3 class="company__title">Company</h3>
+      <h3 class="company__title js-editable" contenteditable="true">Company</h3>
       <ul class="company__list">
-        <li class="company__item"><a href="#" class="company__item-link" role="link">About Us</a></li>
-        <li class="company__item"><a href="#" class="company__item-link" role="link">Blog</a></li>
-        <li class="company__item"><a href="#" class="company__item-link" role="link">Careers</a></li>
-        <li class="company__item"><a href="#" class="company__item-link" role="link">Contact Us</a></li>
+        <li class="company__item"><a href="#" class="company__item-link js-editable" contenteditable="true" role="link">About Us</a></li>
+        <li class="company__item"><a href="#" class="company__item-link js-editable" contenteditable="true" role="link">Blog</a></li>
+        <li class="company__item"><a href="#" class="company__item-link js-editable" contenteditable="true" role="link">Careers</a></li>
+        <li class="company__item"><a href="#" class="company__item-link js-editable" contenteditable="true" role="link">Contact Us</a></li>
       </ul>
     </div>
     <div class="support">
-      <h3 class="support__title">Support</h3>
+      <h3 class="support__title js-editable" contenteditable="true">Support</h3>
       <ul class="support__list">
-        <li class="support__item"><a href="#" class="support__item-link" role="link">Help Center</a></li>
-        <li class="support__item"><a href="#" class="support__item-link" role="link">Safety Center</a></li>
-        <li class="support__item"><a href="#" class="support__item-link" role="link">Community Guidelines</a></li>
+        <li class="support__item"><a href="#" class="support__item-link js-editable" contenteditable="true" role="link">Help Center</a></li>
+        <li class="support__item"><a href="#" class="support__item-link js-editable" contenteditable="true" role="link">Safety Center</a></li>
+        <li class="support__item"><a href="#" class="support__item-link js-editable" contenteditable="true" role="link">Community Guidelines</a></li>
       </ul>
     </div>
     <div class="legal">
-      <h3 class="legal__title">Legal</h3>
+      <h3 class="legal__title js-editable" contenteditable="true">Legal</h3>
       <ul class="legal__list">
-        <li class="legal__item"><a href="#" class="legal__item-link" role="link">Cookies Policy</a></li>
-        <li class="legal__item"><a href="#" class="legal__item-link" role="link">Privacy Policy</a></li>
-        <li class="legal__item"><a href="#" class="legal__item-link" role="link">Terms of Service</a></li>
-        <li class="legal__item"><a href="#" class="legal__item-link" role="link">Law Enforcement</a></li>
+        <li class="legal__item"><a href="#" class="legal__item-link js-editable" contenteditable="true" role="link">Cookies Policy</a></li>
+        <li class="legal__item"><a href="#" class="legal__item-link js-editable" contenteditable="true" role="link">Privacy Policy</a></li>
+        <li class="legal__item"><a href="#" class="legal__item-link js-editable" contenteditable="true" role="link">Terms of Service</a></li>
+        <li class="legal__item"><a href="#" class="legal__item-link js-editable" contenteditable="true" role="link">Law Enforcement</a></li>
       </ul>
     </div>
     <div class="mini-foot">
@@ -279,6 +283,7 @@
       </div>
     </div>
   </footer>
+  <script src='node_modules/hotkeys-js/dist/hotkeys.min.js'></script>
   <script src='./app.js'></script>
 </body>
 </html>

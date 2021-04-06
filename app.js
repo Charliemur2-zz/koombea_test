@@ -1,3 +1,5 @@
+import hotkeys from 'hotkeys-js';
+
 /* getting elements */
 const navBar = document.querySelector('.js-navbar');
 const header = document.querySelector('.js-header');
@@ -74,3 +76,31 @@ window.addEventListener('load', (
       );
   }
 ));
+
+/* USER TEXT EDIT */
+const editableDivs = document.querySelectorAll('.js-editable');
+const saveEditBtn = document.querySelector('.js-saveBtn');
+
+hotkeys('ctrl+k, command+k', function() {
+  alert('editmode');
+  return false;
+});
+let userVersionArray = [];
+saveEditBtn.addEventListener('click', function() {
+  Array.from(editableDivs).forEach(editableDiv => {
+    let userVersion = editableDiv.innerHTML;
+    userVersionArray.push(userVersion);
+  });
+  console.log(userVersionArray);
+  localStorage.userEdit = JSON.stringify(userVersionArray);
+});
+window.onload = (event) => {
+  if( localStorage.userEdit != null) {
+    userEditParse = JSON.parse(localStorage.userEdit);
+    console.log(userEditParse);
+    for (let i = 0; i < localStorage.userEdit.length; i++) {
+      editableDivs[i].innerHTML = userEditParse[i];
+      console.log(editableDivs[i])
+    }
+  }
+}

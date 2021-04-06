@@ -110,7 +110,29 @@ button {
 button:focus {
   outline: none;
 }
-
+/* EDIT BAR */
+.edit-bar {
+  width: 20%;
+  background: transparent;
+  position: fixed;
+  left: 26%;
+  top: 5.2%;
+}
+.edit-bar__title {
+  font-weight: 800;
+  font-style: normal;
+}
+.edit-bar__save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 101px;
+  height: 27px;
+  margin: 2px 0;
+  border: var(--brand-purpple) 1px solid;
+  border-radius: 10px;
+  background-color: transparent;
+}
 /* -------HEADER-------- */
 .header {
   display: flex;
