@@ -2,7 +2,7 @@
 
 # Landify Home Page
 
-Home Page For Landify
+Home Page For Landify with edit option.
 <a href="https://festive-turing-ef39c7.netlify.app/">Deploy</a>
 
 ---
