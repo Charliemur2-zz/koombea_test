@@ -3,18 +3,26 @@
 # Landify Home Page
 
 Home Page For Landify
+<a href="https://festive-turing-ef39c7.netlify.app/">Deploy</a>
 
 ---
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [Support](#support)
-- [License](#license)
-
+- [Landify Home Page](#landify-home-page)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Features](#features)
+  - [Usage](#usage)
+  - [Documentation](#documentation)
+  - [Contributing](#contributing)
+    - [Step 1](#step-1)
+    - [Step 2](#step-2)
+    - [Step 3](#step-3)
+  - [Team](#team)
+  - [https://github.com/Charliemur2](#httpsgithubcomcharliemur2)
+  - [Support](#support)
+  - [License](#license)
 
 ---
 
@@ -25,6 +33,7 @@ Clone the repositoy on your local computer.
 ---
 
 ## Features
+
 Navbar and Hero section
 <img src="./images/readme-imgs/hero.png">
 Clouds section
@@ -41,11 +50,11 @@ Footer and mini-footer section
 
 ---
 
-## Usage 
+## Usage
 
 After clone the repository you can see the home page in the browser with index.html file. Make changes and test things on it.
 
-## Documentation 
+## Documentation
 
 <a href="https://9elements.com/bem-cheat-sheet/">`BEM CheatSheet`</a><br>
 <a href="https://sparkbox.com/foundry/bem_by_example">`BEM examples`</a><br>
@@ -62,10 +71,11 @@ After clone the repository you can see the home page in the browser with index.h
 ### Step 1
 
 - **Option 1**
-    - 🍴 Fork this repo!
+
+  - 🍴 Fork this repo!
 
 - **Option 2**
-    - 👯 Clone this repo to your local machine.
+  - 👯 Clone this repo to your local machine.
 
 ### Step 2
 
@@ -73,13 +83,13 @@ After clone the repository you can see the home page in the browser with index.h
 
 ### Step 3
 
-- 🔃 Create a new pull request. 
+- 🔃 Create a new pull request.
+
 ---
 
 ## Team
 
-https://github.com/Charliemur2
----
+## https://github.com/Charliemur2
 
 ## Support
 
@@ -88,7 +98,6 @@ Feel free to contact me!
 - GitHub at <a href="https://github.com/Charliemur2">`Charliemur2`</a>
 - Twitter at <a href="https://twitter.com/charliesoka">`@charliesoka`</a>
 - LinkedIn at <a href="https://www.linkedin.com/in/carlos-andres-murcia-munoz/">
-- Insert more social links here.
 
 ---
 
